@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="pphhyyCaptRexA">
+    <defName>pphhyy_flag_CaptRexRF</defName>
+    <label>Rhydellian Federation</label>
+    <graphicData>
+      <texPath>Building/Flags/pphhyy_flag_CaptRex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+    </graphicData>
+    <uiIconPath>Building/Flags/pphhyy_flag_CaptRex</uiIconPath>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="pphhyyCaptRexA" ParentName="pphhyyCaptRex">
+    <description>A High Flag, marking your territory.</description>
+    <designatorDropdown>pphhyyCaptRexA</designatorDropdown>
+    <thingClass>Building</thingClass>
+    <costList>
+      <WoodLog>55</WoodLog>
+      <Cloth>5</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Flammability>0.2</Flammability>
+      <Mass>7.5</Mass>
+      <Beauty>25</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="pphhyyCaptRex" ParentName="BuildingBase">
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <constructEffect>ConstructMetal</constructEffect>
+    <category>Building</category>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <designationCategory>Furniture</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <researchPrerequisites>
+      <li>CarpetMaking</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+</Defs>
